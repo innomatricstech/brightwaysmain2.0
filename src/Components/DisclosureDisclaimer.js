@@ -51,7 +51,7 @@ export default function DisclosureDisclaimer() {
              <li>NO WARRANTIES: The Research Analyst does not guarantee the accuracy, results, or reliability of content on its website, including merchantability, suitability, and non-infringement.</li>
             <li>EXERCISE CAUTION: We provide research analysis and specific securities recommendations but do not offer portfolio management services, personal account handling, profit sharing, or risk-profiling-based investment advisory services.</li>
             <li>Report any unethical practices to our support/compliance team support@brightwaysfinancial.com contact: +91 6363360542 or SEBI Toll-Free Number 1800227575</li>
-            <li>Any un unethical practice contact our mail id support@brightwaysfinancial.com contact: +91 6363360542</li>
+            <li>Any un ethical practice contact our mail id support@brightwaysfinancial.com contact: +91 6363360542</li>
   <li>Research analyst or his associates or his relatives have no financial interest in the subject company.</li>
 
   <li>Research analyst or his associates or relatives have no actual/beneficial ownership of one percent or more securities of the subject company, at the end of the month immediately preceding the date of publication of the research report or date of the public appearance or research recommendation.</li>
