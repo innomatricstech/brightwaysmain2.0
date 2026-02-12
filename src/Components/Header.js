@@ -3,16 +3,12 @@ import { Button } from "react-bootstrap";
 import Dropdown from 'react-bootstrap/Dropdown';
 import "./header.css";
 
-import "./header.css";
-
 function Header() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-
   const [navigation, setnavigation] = useState("relative");
 
   useEffect(() => {
     window.addEventListener("scroll", stickNavbar);
-
     return () => {
       window.removeEventListener("scroll", stickNavbar);
     };
@@ -58,7 +54,6 @@ function Header() {
               setIsNavExpanded(!isNavExpanded);
             }}
           >
-            {/* icon from Heroicons.com */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -72,25 +67,33 @@ function Header() {
               />
             </svg>
           </button>
+
           <div
             className={
               isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
             }
           >
             <ul>
+
               <li>
                 <a href="/">Home</a>
               </li>
 
-
               <li>
                 <Dropdown>
-                  <Dropdown.Toggle bsPrefix="custom-dropdown-toggle"  variant="" id="dropdown-basic" className="text-dark">
+                  <Dropdown.Toggle
+                    bsPrefix="custom-dropdown-toggle"
+                    variant=""
+                    id="dropdown-basic"
+                    className="text-dark"
+                  >
                     <a href="#" className="text-dark">Service ▼</a>
                   </Dropdown.Toggle>
+
                   <Dropdown.Menu className="bg-white">
-                    <Dropdown.Item href="/service">All Services</Dropdown.Item>
-                    
+                    <Dropdown.Item href="/service">
+                      All Services
+                    </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </li>
@@ -98,23 +101,38 @@ function Header() {
               <li>
                 <a href="/investor">Investor Charter</a>
               </li>
+
               <li>
                 <a href="/complaint">Complaint Table</a>
               </li>
+
               <li>
                 <a href="/about">About us</a>
               </li>
+
               <li>
-                <a href="/disclosure-disclaimer">Disclosure & Disclaimer</a>
+                <a href="/disclosure-disclaimer">
+                  Disclosure & Disclaimer
+                </a>
               </li>
+
               <li>
                 <a href="/contact">Contact us</a>
               </li>
+
+              {/* ⭐ Payment Button Added */}
+              <li>
+                <a href="/payment">
+                  <Button variant="warning">Payment</Button>
+                </a>
+              </li>
+
               <li>
                 <a href="/kyc">
                   <Button variant="success">KYC</Button>
                 </a>
               </li>
+
             </ul>
           </div>
         </nav>

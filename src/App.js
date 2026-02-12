@@ -21,12 +21,16 @@ import ProCommodity from "./Components/ProCommodity";
 import StockCashPro from "./Components/StockCashPro";
 import HNIStockFuturePro from "./Components/HNIStockfuturepro";
 
+/* ⭐ Added Import */
+import PaymentPage from "./Components/Payment";
+
 function App() {
   return (
     <>
       <div style={{ overflow: "clip" }}>
         <BrowserRouter>
           <Routes>
+
             <Route
               path="/"
               element={
@@ -48,6 +52,7 @@ function App() {
                 </>
               }
             />
+
             <Route
               path="/service"
               element={
@@ -58,6 +63,7 @@ function App() {
                 </>
               }
             />
+
             <Route
               path="/investor"
               element={
@@ -68,6 +74,7 @@ function App() {
                 </>
               }
             />
+
             <Route
               path="/complaint"
               element={
@@ -80,6 +87,7 @@ function App() {
             />
 
             {/* Service Dropdown */}
+
             <Route
               path="/basic-stock-cash"
               element={
@@ -90,6 +98,7 @@ function App() {
                 </>
               }
             />
+
             <Route
               path="/basic-index-option"
               element={
@@ -133,12 +142,13 @@ function App() {
                 </>
               }
             />
+
             <Route
               path="/hni-stock-future-pro"
               element={
                 <>
                   <Header />
-                  <HNIStockFuturePro/>
+                  <HNIStockFuturePro />
                   <Footer />
                 </>
               }
@@ -177,7 +187,6 @@ function App() {
               }
             />
 
-
             <Route
               path="/policy"
               element={
@@ -188,6 +197,7 @@ function App() {
                 </>
               }
             />
+
             <Route
               path="/disclosure-disclaimer"
               element={
@@ -198,6 +208,7 @@ function App() {
                 </>
               }
             />
+
             <Route
               path="/kyc"
               element={
@@ -208,6 +219,19 @@ function App() {
                 </>
               }
             />
+
+            {/* ⭐⭐⭐ Payment Route Added */}
+            <Route
+              path="/payment"
+              element={
+                <>
+                  <Header />
+                  <PaymentPage />
+                  <Footer />
+                </>
+              }
+            />
+
           </Routes>
         </BrowserRouter>
       </div>
